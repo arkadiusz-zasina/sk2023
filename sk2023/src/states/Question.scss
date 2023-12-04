@@ -1,0 +1,29 @@
+.Question {
+
+    .header1 {
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+        color: lightgray;
+    }
+
+    .header2 {
+        font-size: 1.5rem;
+    }
+    .answers {
+        padding-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-inline: 20px;
+        .answerButton {
+            height: 50px;
+            border-radius: 10px;
+            outline: none;
+            background-color: transparent;
+            border: white 3px solid;
+            color: yellow;
+            font-size: 1.2rem;
+            font-family: 'Rubik Bubbles', sans-serif;
+        }
+    }
+}

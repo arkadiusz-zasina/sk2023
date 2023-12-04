@@ -1,0 +1,148 @@
+.Reveal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .name {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        color: lightblue;
+        animation: nameAnim .5s infinite;
+    }
+
+    .present {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            animation: presentAnim 4s forwards;
+        }
+    }
+
+    .buttonSection {
+        flex: 1;
+    }
+
+    .whiteCircle {
+        position: absolute;
+        background-color: white;
+        top: 38%;
+        left: 38%;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        z-index: 1;
+        opacity: 0.5;
+        pointer-events: none;
+        animation: whiteCircleAnim 8s forwards;
+        box-shadow: 0px 0px 35px 4px rgba(255, 255, 255, 1);
+    }
+
+    @keyframes whiteCircleAnim {
+        0% {
+            width: 0px;
+            height: 0px;
+            opacity: 0;
+            top: 38%;
+            left: 38%;
+        }
+        45% {
+            width: 20px;
+            height: 20px;
+            opacity: 0;
+            top: -35%;
+            left: -35%;
+        }
+        50% {
+            width: 2000px;
+            height: 2000px;
+            opacity: 1;
+            top: -100%;
+            left: -100%;
+        }
+        100% {
+            width: 1000px;
+            height: 1000px;
+            opacity: 0;
+            top: -100%;
+            left: -100%;
+        }
+    }
+
+    @keyframes presentAnim {
+        0% {
+            width: 30vw;
+            transform: rotate(0deg);
+        }
+        10% {
+            transform: rotate(10deg);
+        }
+        20% {
+            transform: rotate(-10deg);
+        }
+        30% {
+            transform: rotate(10deg);
+        }
+        40% {
+            transform: rotate(-10deg);
+        }
+        50% {
+            width: 40vw;
+            transform: rotate(10deg);
+        }
+        55% {
+            transform: rotate(-10deg);
+        }
+        60% {
+            transform: rotate(10deg);
+        }
+        65% {
+            transform: rotate(-10deg);
+        }
+        70% {
+            transform: rotate(10deg);
+        }
+        75% {
+            transform: rotate(-10deg);
+        }
+        80% {
+            transform: rotate(10deg);
+        }
+        85% {
+            transform: rotate(-10deg);
+        }
+        90% {
+            transform: rotate(10deg);
+        }
+        95% {
+            transform: rotate(-10deg);
+        }
+        100% {
+            transform: rotate(10deg);
+            width: 70vw;
+        }
+        
+    }
+
+    @keyframes nameAnim {
+        0% {
+            color: lightblue;
+            transform: rotate(-4deg);
+        }
+        50% {
+            color: lightgreen;
+            transform: rotate(4deg);
+        }
+        100% {
+            color: lightblue;
+            transform: rotate(-4deg);
+        }
+    }
+}

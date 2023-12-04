@@ -1,38 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #B11E31;
+  height: 100vh;
   color: white;
-}
+  font-family: 'Rubik Bubbles', sans-serif;
+  position: relative;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .App-logo {
+    width: 100vw;
   }
 }
+
+.spacer {
+  flex: 1;
+}
+
+.button {
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  background-color: transparent;
+  border: white 3px solid;
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Rubik Bubbles', sans-serif;
+}
+
+.state {
+  animation: fadeSlide .6s ease-in-out;
+}
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+

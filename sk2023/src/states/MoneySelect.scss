@@ -1,0 +1,27 @@
+.MoneySelect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .header2 {
+        font-size: 1.2rem;
+        color: lightgray;
+        margin-bottom: 4rem;
+    }
+
+    .moneyInput {
+        width: 50vw;
+        font-size: 1.5rem;
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        outline: none;
+        text-align: center;
+    }
+}
